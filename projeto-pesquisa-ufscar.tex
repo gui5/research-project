@@ -1,0 +1,245 @@
+%% Este arquivo foi modificado de:
+%% modeloABNT2, v1.0 athila
+%% Copyright 2013 by Athila e Monaro
+%% Desenvolvido para EESC-USP
+
+\documentclass[projeto]{ufscar}
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{cmap}				% Mapear caracteres especiais no PDF
+\usepackage{lmodern}				% Usa a fonte Latin Modern
+\usepackage{makeidx}            	% Cria o indice
+\usepackage{hyperref}  			% Controla a formação do índice
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}			% Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			% Lista de simbolos
+\usepackage{graphicx}			% Inclusão de gráficos
+% ---
+
+% ---
+% Pacotes adicionais
+% ---
+\usepackage{lipsum}				       % para geração de dummy text
+\usepackage[printonlyused]{acronym}
+\usepackage[table]{xcolor}
+% ---
+
+
+% ---
+% Informações de dados para CAPA
+% ---
+%
+% Título:
+%	1. Título em português
+%	2. Título em inglês
+\titulo{Título em português}{Título em inglês}
+%
+% Autor:
+%	1. Nome completo do autor
+%	2. Formato de nome para bibliografia
+\autor{Nome completo do autor}{Sobrenome, Nome}
+%
+% Cidade
+\local{São Carlos}
+% Ano de defesa
+\data{2020}
+
+% Universidade
+\universidade{Universidade XXXXX}{XXXXX}
+% \universidade{Universidade Federal de São Carlos}{UFSCar}
+
+% Centro
+\centro{Centro de XXXXX}{XXXX}
+% \centro{Centro de Ciências Exatas e de Tecnologia}{CCET}
+
+% Depatamento
+\departamento{Departamento de XXXX}{XX}
+%\departamento{Departamento de Computação}{DC}
+%\departamento{Departamento de Engenharia Elétrica}{DEE}
+
+% Programa de Pós-Graduação
+\programa{Programa de Pós-Graduação em XXXXXX}{PPGXX}
+% \programa{Programa de Pós-Graduação em Ciência da Computação}{PPGCC}
+%\programa{Programa de Pós-Graduação em Engenharia Elétrica}{PPGEE}
+
+% Curso
+\curso{XXXXXX}
+%\curso{Ciência da Computação}
+%\curso{Engenharia Elétrica}
+
+
+% Área de concentração da pesquisa
+\areaconcentracao{XXXXXX}
+% \areaconcentracao{Metodologias e Técnicas de Computação}
+% \areaconcentracao{Sistemas Elétricos e Eletrônicos}
+
+% Nome do orientador
+\orientador{Nome completo do orientador}
+% Nome do coorientador
+\coorientador{Nome completo do coorientador}
+% ---
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Compila a lista de abreviaturas e siglas
+% ---
+\makenomenclature
+% ---
+
+% ----
+% Início do documento
+% ----
+
+\begin{document}
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\pretextual
+
+% ---
+% Insere Capa, Folha de rosto.
+% ---
+\maketitle
+
+% ---
+% inserir o sumario
+% ---
+\sumario
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\mainmatter
+
+% ----------------------------------------------------------
+% Informações Gerais
+% ----------------------------------------------------------
+\chapter{Informações Gerais}
+%\addcontentsline{toc}{chapter}{Informações Gerais}
+
+\section{Título do Projeto}
+
+Título do projeto.
+
+
+\section{Palavra-Chave}
+
+Palavra 1, Palavra 2.
+
+
+\section{Grupo de Pesquisa de Vinculação}
+
+Pesquisa vinculada ao grupo de Robótica / Mecatrônica (Grupo de Pesquisa Certificado pela UFSCar e pelo CNPq) (http://www.robotica.ufscar.br).
+
+\section{Duração Total do Projeto}
+\begin{itemize}
+    \item Número de Meses: 24
+    \item Período Abrangido: 03/2019 à 03/2020
+\end{itemize}
+\section{Responsáveis pela Formulação do Projeto}
+\begin{itemize}
+    \item Nome do Proponente: Aluno
+    \item Nome do Professor: Professor
+\end{itemize}
+
+\section{Local de Execução do Projeto}
+
+\indent Universidade Federal de São Carlos –- UFSCar\\ 
+\indent Centro de Ciências Exatas e Tecnologia –- CCET\\
+
+
+\indent Rodovia Washington Luís, km 235 - SP-310 \\
+\indent São Carlos, SP, CEP 13565-905 \\
+\indent Fone: (16) 3351-8607 
+
+\section{Resumo do Projeto de Pesquisa}
+
+\section{Abstract}
+
+% ----------------------------------------------------------
+% Descrição do Projeto de Pesquisa
+% ----------------------------------------------------------
+\chapter{Descrição do Projeto de Pesquisa}
+% \addcontentsline{toc}{chapter}{Descrição do Projeto de Pesquisa}
+
+\section{Introdução}
+
+\cite{ibge1993}
+
+\section{Justificativas e Objetivos do Projeto de Pesquisa}
+
+\section{Aspectos Metodológicos}
+
+\section{Plano de Atividades e Cronograma}
+
+% ---
+\bookmarksetup{startatroot}% 
+% ---
+% Considerações Finais
+% ---
+\section{Considerações Finais}
+% \addcontentsline{toc}{chapter}{Considerações Finais}
+
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+
+\bibliography{refs/abntex2-modelo-references}
+
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+% ---
+% Inicia os apêndices
+% ---
+%\begin{apendicesenv}
+% Imprime uma página indicando o início dos apêndices
+% \partapendices
+% ----------------------------------------------------------
+% Incluir Apêndice
+% ----------------------------------------------------------
+%\chapter{Quisque libero justo}
+%\lipsum[1-5]
+
+%\end{apendicesenv}
+% ---
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+% ---
+% Inicia os anexos
+% ---
+%\begin{anexosenv}
+% Imprime uma página indicando o início dos anexos
+% \partanexos
+% ---
+% Incluir Anexo
+% ---
+%\chapter{Morbi ultrices rutrum lorem.}
+%\lipsum[1-25]
+%\section{Test}
+%\lipsum[1-20]
+
+
+%\end{anexosenv}
+
+
+\end{document}
+
+
