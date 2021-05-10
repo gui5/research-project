@@ -3,7 +3,7 @@ name: pre-release
 on:
   workflow_run:
     workflows: ["build-document"]
-    branches: [main]
+    branches: [master]
     types:
       - completed
     paths-ignore:
