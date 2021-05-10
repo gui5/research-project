@@ -99,12 +99,12 @@
      	%backref=true,
      	%pagebackref=true,
 		%bookmarks=true,         		% show bookmarks bar?
-		pdftitle={\imprimirtitulo}, 
-		pdfauthor={\imprimirautor},
+		%pdftitle={\imprimirtitulo}, 
+		%pdfauthor={\imprimirautor},
     	pdfsubject={\imprimirpreambulo},
 		pdfkeywords={PALAVRAS}{CHAVES}{abnt}{abntex}{abntex2},
 	    pdfproducer={LaTeX with abnTeX2}, 	% producer of the document
-	    pdfcreator={\imprimirautor},
+	    %pdfcreator={\imprimirautor},
     	colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=black,          	% color of internal links
     	citecolor=black,        		% color of links to bibliography
