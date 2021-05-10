@@ -18,11 +18,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Git repository
-        uses: actions/checkout@v2
+      uses: actions/checkout@v2
     - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: projeto-pesquisa-ufscar.tex
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: projeto-pesquisa-ufscar.tex
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
         automatic_release_tag: "latest"
