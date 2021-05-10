@@ -24,6 +24,7 @@
 \def\@niveltrabalho{tese}
 }
 
+
 \DeclareOption{qualidr}{
 \def\@tipotrabalho{Qualificação de doutorado}
 \def\@worktype{Ph.D. Thesis}
@@ -54,6 +55,8 @@
 
 
 \ProcessOptions\relax
+
+
 
 %=========================================================================
 % Herança da classe `abntex2' e inclusão de pacotes e arquivos necessários

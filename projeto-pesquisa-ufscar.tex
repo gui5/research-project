@@ -1,9 +1,7 @@
-%% Este arquivo foi modificado de:
-%% modeloABNT2, v1.0 athila
-%% Copyright 2013 by Athila e Monaro
-%% Desenvolvido para EESC-USP
+
 
 \documentclass[projeto]{ufscar}
+
 
 % ---
 % PACOTES
@@ -28,9 +26,12 @@
 \usepackage{lipsum}				       % para geração de dummy text
 \usepackage[printonlyused]{acronym}
 \usepackage[table]{xcolor}
+\usepackage[alf]{abntex2cite}
+\usepackage[brazilian,hyperpageref]{backref}
 % ---
 
 
+%\addbibresource{refs/abntex2-modelo-references.bib}
 % ---
 % Informações de dados para CAPA
 % ---
@@ -102,6 +103,7 @@
 % ----
 
 \begin{document}
+
 
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
@@ -197,8 +199,8 @@ Pesquisa vinculada ao grupo de Robótica / Mecatrônica (Grupo de Pesquisa Certi
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-
-\bibliography{refs/abntex2-modelo-references}
+\typeout{}
+\bibliography{refs/abntex2-modelo-references.bib}
 
 
 % ----------------------------------------------------------
